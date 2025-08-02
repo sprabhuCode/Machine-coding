@@ -3,7 +3,6 @@ package org.example.dto.expense;
 import lombok.Data;
 import org.example.dto.ExpenseType;
 import org.example.dto.User;
-import org.example.processor.ISplitStrategy;
 
 import java.util.List;
 
@@ -16,17 +15,14 @@ public abstract class Expense {
     private ExpenseType expenseType;
     private String description;
 
-    private ISplitStrategy splitStrategy;
-
      Expense(String expenseId, double totalAmount, User paidBy, List<Split> split,
-             ExpenseType expenseType, String description, ISplitStrategy splitStrategy) {
+             ExpenseType expenseType, String description) {
         this.expenseId = expenseId;
         this.totalAmount = totalAmount;
         this.paidBy = paidBy;
         this.split = split;
         this.expenseType = expenseType;
         this.description = description;
-        this.splitStrategy = splitStrategy;
     }
 
 }
