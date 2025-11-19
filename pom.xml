@@ -18,6 +18,7 @@
 
     <modules>
         <module>Splitwise</module>
+        <module>ParkingLotDesign</module>
         <module>SnakeNLadderGame</module>
     </modules>
 
