@@ -20,6 +20,7 @@
         <module>Splitwise</module>
         <module>SnakeNLadderGame</module>
         <module>BookingSystem</module>
+        <module>RateLimittingSystem</module>
     </modules>
 
     <properties>
